@@ -2,6 +2,8 @@
 
 A simple command-line Library Management System developed using **Python** and **MySQL**. This project demonstrates CRUD (Create, Read, Update, Delete) operations, database connectivity, and a menu-driven interface.
 
+> This is the **initial version** of the project — a straightforward, single-layer implementation. A refactored, more modular version with a layered service-oriented structure is available at [Library_Management_System_V2](https://github.com/MukeshK25-dev/Library_Management_System_V2).
+
 ---
 
 ## 🚀 Features
@@ -27,12 +29,12 @@ A simple command-line Library Management System developed using **Python** and *
 ## 📂 Project Structure
 
 ```text
-Library_Management_System/
+Library_Management_System_V1/
 │
 ├── database/
 │   ├── db_connect.py
 │   ├── create_database.py
-│   ├── create_tables.py
+│   ├── create_table.py
 │   ├── add_book.py
 │   ├── view_books.py
 │   ├── search_book.py
@@ -65,7 +67,7 @@ python database/create_database.py
 5. Create the tables:
 
 ```bash
-python database/create_tables.py
+python database/create_table.py
 ```
 
 6. Run the application:
