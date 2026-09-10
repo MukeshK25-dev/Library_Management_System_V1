@@ -6,6 +6,17 @@ A simple command-line Library Management System developed using **Python** and *
 
 ---
 
+## Why this version is still public
+
+This isn't left here by accident. V1 is the first pass — one script per
+operation, direct database calls, no service layer. [V2](https://github.com/MukeshK25-dev/Library_Management_System_V2)
+is a deliberate rebuild of the same project into a layered architecture
+(`config` / `database` / `models` / `services` / `utils`). Keeping both
+public shows the actual refactor, not just the end state — V1 is the
+"before," V2 is the "after."
+
+---
+
 ## 🚀 Features
 
 * Add a new book
@@ -41,6 +52,7 @@ Library_Management_System_V1/
 │   ├── update_book.py
 │   └── delete_book.py
 │
+├── .env.example
 └── main.py
 ```
 
@@ -50,13 +62,19 @@ Library_Management_System_V1/
 
 1. Clone the repository.
 
-2. Install the required package:
+2. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Configure MySQL credentials inside `db_connect.py`.
+3. Configure MySQL credentials:
+
+```bash
+cp .env.example .env
+# then edit .env and set DB_PASSWORD (and DB_HOST/DB_USER/DB_DATABASE if
+# your setup differs from the defaults)
+```
 
 4. Create the database:
 
@@ -86,6 +104,7 @@ python main.py
 * MySQL Database Connectivity
 * Error Handling
 * User Input Validation
+* Environment-based configuration (no hardcoded credentials)
 
 ---
 
