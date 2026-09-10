@@ -100,6 +100,9 @@ python main.py
 
 ---
 
+## 📝 License
+MIT — see [LICENSE](./LICENSE).
+
 ## 👨‍💻 Author
 
 Mukesh K
